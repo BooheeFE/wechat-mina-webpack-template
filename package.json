@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/BooheeFE/wechat-mina-webpack-template/issues"
   },
-  "homepage": "https://github.com/BooheeFE/wechat-mina-webpack-template#readme"
+  "homepage": "https://github.com/BooheeFE/wechat-mina-webpack-template#readme",
+  "devDependencies": {
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.6",
+    "webpack-merge": "^4.1.4"
+  }
 }
