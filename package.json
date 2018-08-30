@@ -4,7 +4,8 @@
   "description": "A template of wechat minaapp with webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack/webpack.config.js",
+    "start": "yarn && cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",
