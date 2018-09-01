@@ -29,6 +29,7 @@
     "cross-env": "^5.2.0",
     "eslint": "^5.4.0",
     "eslint-config-booheefe": "^1.2.3",
+    "file-loader": "^2.0.0",
     "node-sass": "^4.9.3",
     "rd": "^2.0.1",
     "sass-loader": "^7.1.0",
