@@ -37,6 +37,7 @@
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.6",
-    "webpack-merge": "^4.1.4"
+    "webpack-merge": "^4.1.4",
+    "wxml-loader": "^0.3.0"
   }
 }
