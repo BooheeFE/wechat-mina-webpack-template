@@ -32,17 +32,11 @@ module.exports = {
         test: /\.scss$/,
 					include: /src/,
 					use: [
-            // relativeFileLoader('wxss'),
-            {
-              loader: 'file-loader',
-              options: {
-                name: '[path][name].wxss',
-              },
-            },
+            relativeFileLoader('wxss'),
             {
               loader: 'sass-loader'
-						},
-					],
+            }
+					]
       }
     ]
   },
