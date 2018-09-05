@@ -1,12 +1,12 @@
 const webpack = require('webpack');
 const path = require('path');
-const copyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const rd = require('rd');
 let srcDir = path.resolve('src');
 let entryList = {};
 rd.eachFileFilterSync(srcDir, /\.(js|scss)$/, (f) => {
   let filePath = f.slice(srcDir.length + 1); // 去掉目录名得到的就是相对路径
-  Object.assign(entryList, {[filePath]: `./src/${filePath}`})
+  Object.assign(entryList, {[filePath]: `./src/${filePath}`});
 });
 
 const relativeFileLoader = (ext = '[ext]') => {
@@ -16,7 +16,7 @@ const relativeFileLoader = (ext = '[ext]') => {
       useRelativePath: true,
       name: `[name].${ext}`,
       context: srcDir
-    },
+    }
   };
 };
 
@@ -30,18 +30,18 @@ module.exports = {
     rules: [
       {
         test: /\.scss$/,
-					include: /src/,
-					use: [
-            relativeFileLoader('wxss'),
-            {
-              loader: 'sass-loader'
-            }
-					]
+        include: /src/,
+        use: [
+          relativeFileLoader('wxss'),
+          {
+            loader: 'sass-loader'
+          }
+        ]
       }
     ]
   },
   plugins: [
-    new copyWebpackPlugin([
+    new CopyWebpackPlugin([
       { from: 'app.json', to: '' },
       { from: 'pages/**/*.wxml', to: '' },
       { from: 'pages/**/*.json', to: '' }
