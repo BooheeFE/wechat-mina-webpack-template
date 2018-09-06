@@ -196,8 +196,6 @@ let util = {
     let currentPage = _currentPage[_currentPage.length - 1].route;
     return currentPage;
   }
-}
+};
 
 export default util;
-
-

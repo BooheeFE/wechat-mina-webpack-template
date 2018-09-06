@@ -25,5 +25,5 @@ const envConfig = {
 };
 
 module.exports = {
-	mainHost: envConfig[env].mainHost
+  mainHost: envConfig[env].mainHost
 };

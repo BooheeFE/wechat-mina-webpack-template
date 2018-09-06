@@ -72,15 +72,15 @@ function getUserTokenSilent(code, callBack) {
       handleToken(token, callBack);
     } else {
       wx.navigateTo({
-        url: '/pages/authorize/authorize',
-      })
+        url: '/pages/authorize/authorize'
+      });
     }
-  })
+  });
 }
 
 function handleToken(token, callBack) {
   app.globalData.token = token;
-  typeof callBack === "function" && callBack();
+  typeof callBack === 'function' && callBack();
 }
 
 export default login;
