@@ -82,7 +82,7 @@ let util = {
    * @return {Object} 返回本地地址.
    */
   onlineImageToLocal(onlineImageUrl) {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       wx.downloadFile({
         url: onlineImageUrl,
         success: function(res) {

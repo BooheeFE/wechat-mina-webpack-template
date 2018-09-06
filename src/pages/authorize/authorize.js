@@ -26,7 +26,7 @@ Page({
             title: '提示',
             content: '请切换到“允许”！',
             showCancel: false,
-            success: function(res) {
+            success: function() {
               self.authorize();
             }
           });
@@ -53,7 +53,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
+  onLoad: function() {
 
   },
 
