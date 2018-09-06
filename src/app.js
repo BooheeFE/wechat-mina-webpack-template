@@ -14,4 +14,4 @@ App({
     // 检查小程序是否有新版本
     utils.checkUpdate();
   }
-})
+});
