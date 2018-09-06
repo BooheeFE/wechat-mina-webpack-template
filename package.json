@@ -6,7 +6,7 @@
   "scripts": {
     "prebuild": "rm -rf `find dist/* ! -name project.config.json`",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack/webpack.config.js",
-    "start": "yarn && cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack/webpack.config.js"
+    "start": "yarn && cross-env NODE_ENV=development webpack --config ./config/webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",
