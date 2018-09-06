@@ -36,12 +36,19 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "授权",
-					"pathName": "pages/authorize/authorize"
+					"pathName": "pages/authorize/authorize",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "openFrom=devtools"
 				}
 			]
 		}
