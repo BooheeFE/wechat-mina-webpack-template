@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const EventHooksPlugin = require('event-hooks-webpack-plugin');
 const rd = require('rd');
 let srcDir = path.resolve('src');
 let entryList = {};
@@ -60,6 +61,21 @@ module.exports = {
     }),
     new webpack.DefinePlugin({ // 定义环境变量
       'process.env': JSON.stringify(process.env.NODE_ENV)
+    }),
+    new EventHooksPlugin({
+      emit: (compilation, callback) => {
+        // compilation.chunks 存放所有代码块，是一个数组
+        compilation.chunks.forEach(function(chunk) {
+        // chunk 代表一个代码块
+          chunk.files.forEach(function(filename) {
+            // compilation.assets 存放当前所有即将输出的资源，是一个对象
+            let regex = /\.scss$/;
+            if (regex.test(filename)) {
+              delete compilation.assets[filename];
+            }
+          });
+        });
+      }
     })
   ]
 };
