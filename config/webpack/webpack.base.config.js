@@ -34,7 +34,17 @@ module.exports = {
         use: [
           relativeFileLoader('wxss'),
           {
-            loader: 'sass-loader'
+            loader: 'sass-loader',
+            options: {
+              outputStyle: 'compressed'
+            }
+          }, {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: path.resolve(__dirname, '../postcss.config.js')
+              }
+            }
           }
         ]
       }
