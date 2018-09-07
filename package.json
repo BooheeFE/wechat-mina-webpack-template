@@ -4,7 +4,9 @@
   "description": "A template of wechat minaapp with webpack",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src --fix",
+    "lint": "yarn lint:es && yarn lint:style",
+    "lint:es": "eslint src --fix",
+    "lint:style": "stylelint src/**/*.scss --fix",
     "precommit": "lint-staged",
     "prebuild": "rm -rf `find dist/* ! -name project.config.json`",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack/webpack.config.js",
@@ -12,8 +14,14 @@
   },
   "lint-staged": {
     "linters": {
-      "*.js": ["eslint --fix", "git add"],
-      "*.scss": ["stylelint  --fix", "git add"]
+      "*.js": [
+        "eslint --fix",
+        "git add"
+      ],
+      "*.scss": [
+        "stylelint  --fix",
+        "git add"
+      ]
     }
   },
   "repository": {
