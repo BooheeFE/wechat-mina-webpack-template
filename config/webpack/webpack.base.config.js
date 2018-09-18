@@ -48,6 +48,21 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.js$/,
+        include: /src/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+      {
+        test: /\.wxml$/,
+        include: /src/,
+        loader: 'wxml-loader'
       }
     ]
   },

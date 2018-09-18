@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  devtool: 'none',
+  devtool: 'source-map',
   watch: true,
   watchOptions: {
     ignored: ['node_modules', 'dist']
