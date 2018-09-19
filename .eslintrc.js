@@ -12,6 +12,7 @@ module.exports = {
     wx: true,
     getApp: true,
     Component: true,
-    getCurrentPages: true
+    getCurrentPages: true,
+    __wxConfig: true
   }
 };
