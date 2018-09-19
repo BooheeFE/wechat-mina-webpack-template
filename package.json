@@ -7,7 +7,7 @@
     "lint": "yarn lint:es && yarn lint:style",
     "lint:es": "eslint src --fix",
     "lint:style": "stylelint src/**/*.scss --fix",
-    "updatetemplate": "node ./utils/update-template.js",
+    "upgradetemplate": "node ./utils/update-template.js",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -E GIT_PARAMS",
     "prebuild": "rm -rf `find dist/* ! -name project.config.json`",

@@ -19,5 +19,5 @@ download('BooheeFE/wechat-mina-template#master', './src', (err) => {
   });
 
   spinner.stop();
-  console.log(chalk.green('Update template successfully!'));
+  console.log(chalk.green('Upgrade template successfully!'));
 });
