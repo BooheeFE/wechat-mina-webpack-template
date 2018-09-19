@@ -10,7 +10,6 @@
     "upgradetemplate": "node ./utils/update-template.js",
     "precommit": "lint-staged",
     "commitmsg": "commitlint -E GIT_PARAMS",
-    "prebuild": "rm -rf `find dist/* ! -name project.config.json`",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack/webpack.config.js",
     "start": "yarn && cross-env NODE_ENV=development webpack --config ./config/webpack/webpack.config.js"
   },
@@ -49,6 +48,7 @@
     "babel-eslint": "^9.0.0",
     "babel-loader": "^8.0.0",
     "chalk": "^2.4.1",
+    "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.2",
     "cross-env": "^5.2.0",
     "download-git-repo": "^1.1.0",
