@@ -78,7 +78,7 @@ module.exports = {
       'process.env': JSON.stringify(process.env.NODE_ENV)
     }),
     new EventHooksPlugin({
-      emit: (compilation, callback) => {
+      emit: (compilation) => {
         // compilation.chunks 存放所有代码块，是一个数组
         compilation.chunks.forEach(function(chunk) {
         // chunk 代表一个代码块
