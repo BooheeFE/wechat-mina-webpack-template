@@ -1,6 +1,5 @@
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
@@ -17,7 +16,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new BundleAnalyzerPlugin(),
     new CleanWebpackPlugin(['dist'], {
       root: path.resolve(__dirname, '../../'),
       verbose: true,
