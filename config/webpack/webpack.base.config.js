@@ -5,7 +5,7 @@ const EventHooksPlugin = require('event-hooks-webpack-plugin');
 const rd = require('rd');
 let srcDir = path.resolve('src');
 let entryList = {};
-rd.eachFileFilterSync(srcDir, /(pages|app)[-a-z0-9_./]*\.(js|scss)$/, (f) => {
+rd.eachFileFilterSync(srcDir, /(pages|app|components)[-a-z0-9_./]*\.(js|scss)$/, (f) => {
   let filePath = f.slice(srcDir.length + 1); // 去掉目录名得到的就是相对路径
   Object.assign(entryList, {[filePath]: `./src/${filePath}`});
 });
@@ -68,9 +68,10 @@ module.exports = {
   },
   plugins: [
     new CopyWebpackPlugin([
-      { from: 'app.json', to: '' },
-      { from: 'pages/**/*.wxml', to: '' },
-      { from: 'pages/**/*.json', to: '' }
+      { from: '',
+        to: '',
+        test: /^(pages|app|components)[-a-z0-9_./]*\.(wxml|json)$/
+      }
     ], {
       context: srcDir
     }),
