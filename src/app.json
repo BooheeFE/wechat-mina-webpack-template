@@ -1,8 +1,5 @@
 {
-  "pages": [
-    "pages/index/index",
-    "pages/authorize/authorize"
-  ],
+  "pages": ["pages/index/index", "pages/authorize/authorize"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

@@ -12,7 +12,9 @@
     "commitmsg": "commitlint -E GIT_PARAMS",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack/webpack.config.js",
     "start": "yarn && cross-env NODE_ENV=development webpack --config ./config/webpack/webpack.config.js",
-    "analyzer": "yarn build --plugin webpack-bundle-analyzer/lib/BundleAnalyzerPlugin"
+    "analyzer": "yarn build --plugin webpack-bundle-analyzer/lib/BundleAnalyzerPlugin",
+    "add:page": "node ./utils/add-file.js --page",
+    "add:comp": "node ./utils/add-file.js --comp"
   },
   "lint-staged": {
     "linters": {
