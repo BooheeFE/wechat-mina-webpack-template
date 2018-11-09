@@ -19,4 +19,6 @@ npm run add:comp
 ### 定制模板  
 在utils里面的page/comp文件夹分别是生成页面/组件的模板文件;可以自行定制
 ## 打包文件
+```
 npm run build
+```
