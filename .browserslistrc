@@ -1,0 +1,5 @@
+# Browsers that we support
+
+ios >= 8
+android >= 4.4.4
+chrome >= 57
