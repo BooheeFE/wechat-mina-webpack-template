@@ -7,7 +7,7 @@ let srcDir = path.resolve('src');
 let entryList = {};
 rd.eachFileFilterSync(
   srcDir,
-  /(pages|app|components)[-a-z0-9_./]*\.(js|scss)$/,
+  /(pages|app|components)[-a-z0-9_./]*\.scss$/,
   f => {
     let filePath = f.slice(srcDir.length + 1); // 去掉目录名得到的就是相对路径
     Object.assign(entryList, { [filePath]: `./src/${filePath}` });
@@ -74,7 +74,7 @@ module.exports = {
         {
           from: '',
           to: '',
-          test: /^(pages|app|components)[-a-z0-9_./]*\.(wxml|json)$/
+          test: /^(pages|app|components)[-a-z0-9_./]*\.(wxml|json|js)$/
         }
       ],
       {
