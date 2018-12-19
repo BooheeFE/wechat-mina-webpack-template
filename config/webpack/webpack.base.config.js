@@ -83,7 +83,7 @@ module.exports = {
     ),
     new webpack.DefinePlugin({
       // 定义环境变量
-      'process.env': JSON.stringify(process.env.NODE_ENV)
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     }),
     new EventHooksPlugin({
       emit: compilation => {
