@@ -16,32 +16,9 @@
     "add:page": "node ./utils/add-file.js --page",
     "add:comp": "node ./utils/add-file.js --comp"
   },
-  "lint-staged": {
-    "linters": {
-      "*.js": [
-        "eslint --fix",
-        "git add"
-      ],
-      "*.scss": [
-        "stylelint --fix",
-        "git add"
-      ]
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BooheeFE/wechat-mina-webpack-template.git"
-  },
-  "keywords": [
-    "wechat"
-  ],
   "author": "simbawu",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BooheeFE/wechat-mina-webpack-template/issues"
-  },
-  "homepage": "https://github.com/BooheeFE/wechat-mina-webpack-template#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "@babel/core": "^7.1.0",
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
@@ -77,5 +54,28 @@
     "webpack-merge": "^4.1.4",
     "wxml-loader": "^0.3.0"
   },
-  "dependencies": {}
+  "lint-staged": {
+    "linters": {
+      "*.js": [
+        "eslint --fix",
+        "git add"
+      ],
+      "*.scss": [
+        "stylelint --fix",
+        "git add"
+      ]
+    }
+  },
+  "keywords": [
+    "wechat"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BooheeFE/wechat-mina-webpack-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BooheeFE/wechat-mina-webpack-template/issues"
+  },
+  "homepage": "https://github.com/BooheeFE/wechat-mina-webpack-template#readme"
 }
