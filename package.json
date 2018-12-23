@@ -54,18 +54,6 @@
     "webpack-merge": "^4.1.4",
     "wxml-loader": "^0.3.0"
   },
-  "lint-staged": {
-    "linters": {
-      "*.js": [
-        "eslint --fix",
-        "git add"
-      ],
-      "*.scss": [
-        "stylelint --fix",
-        "git add"
-      ]
-    }
-  },
   "keywords": [
     "wechat"
   ],
