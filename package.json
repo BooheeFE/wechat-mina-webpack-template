@@ -8,8 +8,6 @@
     "lint:es": "eslint src --fix",
     "lint:style": "stylelint src/**/*.scss --fix",
     "upgradetemplate": "node ./utils/update-template.js",
-    "precommit": "lint-staged",
-    "commitmsg": "commitlint -E GIT_PARAMS",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack/webpack.config.js",
     "start": "yarn && cross-env NODE_ENV=development webpack --config ./config/webpack/webpack.config.js",
     "analyzer": "yarn build --plugin webpack-bundle-analyzer/lib/BundleAnalyzerPlugin",
