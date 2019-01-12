@@ -4,7 +4,8 @@
  * @date 2018-08-06
  */
 
-import {checkUpdate} from './utils/util.js';
+import './utils/to-promise.js';
+import { checkUpdate } from './utils/util.js';
 
 App({
   globalData: {

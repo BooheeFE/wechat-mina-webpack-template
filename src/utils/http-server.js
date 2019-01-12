@@ -4,7 +4,6 @@
  * @date 2018-08-06
  */
 
-import './to-promise.js';
 import {toast, alert} from './util.js';
 
 const DEFAULT_REQUEST_OPTIONS = {
