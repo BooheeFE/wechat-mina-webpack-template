@@ -7636,10 +7636,10 @@ style-search@^0.1.0:
   resolved "https://registry.yarnpkg.com/style-search/-/style-search-0.1.0.tgz#7958c793e47e32e07d2b5cafe5c0bf8e12e77902"
   integrity sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=
 
-stylelint-config-booheefe@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-booheefe/-/stylelint-config-booheefe-1.0.0.tgz#f05880878cb56689ab37bff92e5edf0de6b420da"
-  integrity sha512-dBkE4kY0Bu8O+RswW7wKWwsFu9FwUTCWx4tsbtjUs+lxjT6yzrrTnhkP4QbRq/3XrAR29m09QuRA1v/EAmioxw==
+stylelint-config-booheefe@1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/stylelint-config-booheefe/-/stylelint-config-booheefe-1.0.5.tgz#e62e2c49d74ecb719c2b3f3511e762dc185a1670"
+  integrity sha512-o3dHuQ8q1GD5iTacWiyr0GpMHyycS2dee9WaZ4RFH7n9tdMW69BcavkjNfPaT877W2xSHpla+1NVVXLZKLg/xQ==
   dependencies:
     stylelint-order "^0.8.1"
 
