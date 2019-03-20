@@ -1,65 +1,22 @@
 {
   "name": "wechat-mina-webpack-template",
-  "version": "0.0.1",
-  "description": "A template of wechat minaapp with webpack",
+  "version": "1.0.0",
+  "description": "gulp-version",
   "main": "index.js",
   "scripts": {
-    "lint": "yarn lint:es && yarn lint:style",
-    "lint:es": "eslint src --fix",
-    "lint:style": "stylelint src/**/*.scss --fix",
-    "upgradetemplate": "node ./utils/update-template.js",
-    "build": "cross-env NODE_ENV=production webpack --config ./config/webpack/webpack.config.js",
-    "start": "yarn && cross-env NODE_ENV=development webpack --config ./config/webpack/webpack.config.js",
-    "analyzer": "yarn build --plugin webpack-bundle-analyzer/lib/BundleAnalyzerPlugin",
-    "add:page": "node ./utils/add-file.js --page",
-    "add:comp": "node ./utils/add-file.js --comp"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "simbawu",
-  "devDependencies": {},
-  "dependencies": {
-    "@babel/core": "^7.1.0",
-    "@babel/polyfill": "^7.0.0",
-    "@babel/preset-env": "^7.1.0",
-    "@commitlint/cli": "^7.1.2",
-    "@commitlint/config-conventional": "^7.1.2",
-    "autoprefixer": "^9.1.5",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.0",
-    "chalk": "^2.4.1",
-    "clean-webpack-plugin": "^1.0.0",
-    "copy-webpack-plugin": "^4.5.2",
-    "cross-env": "^5.2.0",
-    "download-git-repo": "^1.1.0",
-    "eslint": "^5.4.0",
-    "eslint-config-booheefe": "1.2.8",
-    "event-hooks-webpack-plugin": "^2.1.0",
-    "file-loader": "^2.0.0",
-    "husky": "^1.3.1",
-    "lint-staged": "^8.1.0",
-    "node-sass": "^4.9.3",
-    "ora": "^3.0.0",
-    "postcss-loader": "^3.0.0",
-    "rd": "^2.0.1",
-    "sass-loader": "^7.1.0",
-    "shelljs": "^0.8.2",
-    "stylelint": "^9.5.0",
-    "stylelint-config-booheefe": "1.0.5",
-    "uglifyjs-webpack-plugin": "^1.3.0",
-    "webpack": "^4.17.1",
-    "webpack-bundle-analyzer": "^3.0.3",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.6",
-    "webpack-merge": "^4.1.4",
-    "wxml-loader": "^0.3.0"
-  },
-  "keywords": [
-    "wechat"
-  ],
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BooheeFE/wechat-mina-webpack-template.git"
   },
+  "keywords": [
+    "gulp",
+    "miniapp",
+    "template"
+  ],
+  "author": "lance10030",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/BooheeFE/wechat-mina-webpack-template/issues"
   },
