@@ -1,7 +1,11 @@
 # wechat-mina-webpack-template
 微信小程序模版
+# webpack 版本
 ## 安装启动
-1 .clone到本地之后:  
+1 .clone到本地之后:
+```
+gco webpack
+```  
 2. 
 ```
 npm intall
@@ -22,3 +26,4 @@ npm run add:comp
 ```
 npm run build
 ```
+# gulp 版本
